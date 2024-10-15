@@ -26,10 +26,13 @@ public class RecursivePrimeNumbersTest {
     @Test
     public void testForSpecificNumbers() throws Exception {
         ArrayList<Integer> testArrayList = new ArrayList<>(Arrays.asList(2,3,5,7));
-        assertEquals(testArrayList, RecursivePrimeNumbers.solveRecursivePrimeNumbers(10));
+        ArrayList<Integer> testResultingArrayList = new ArrayList<>();
+        assertEquals(testArrayList, RecursivePrimeNumbers.solveRecursivePrimeNumbers(testResultingArrayList, 10, 0));
         ArrayList<Integer> testArrayList2 = new ArrayList<>(Arrays.asList(2,3,5));
-        assertEquals(testArrayList2, RecursivePrimeNumbers.solveRecursivePrimeNumbers(6));
+        ArrayList<Integer> testResultingArrayList2 = new ArrayList<>();
+        assertEquals(testArrayList2, RecursivePrimeNumbers.solveRecursivePrimeNumbers(testResultingArrayList2, 6, 0));
         ArrayList<Integer> testArrayList3 = new ArrayList<>(Arrays.asList(2,3,5,7,11,13,17,19,23));
-        assertEquals(testArrayList3, RecursivePrimeNumbers.solveRecursivePrimeNumbers(24));
+        ArrayList<Integer> testResultingArrayList3 = new ArrayList<>();
+        assertEquals(testArrayList3, RecursivePrimeNumbers.solveRecursivePrimeNumbers(testResultingArrayList3, 24, 0));
     }
 }
