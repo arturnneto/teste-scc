@@ -16,17 +16,17 @@ public class FibonacciTest {
 
     @Test
     public void testThatNegativeInputThrowsInvalidInputException() {
-        assertThrows(InvalidInputException.class, () -> fibonacci.solveFibonacci(-1));
+        assertThrows(InvalidInputException.class, () -> Fibonacci.solveFibonacci(-1));
     }
 
     @Test
     public void testForSpecificNumbers() throws Exception {
-        assertEquals(0, fibonacci.solveFibonacci(0));
-        assertEquals(1, fibonacci.solveFibonacci(1));
-        assertEquals(2, fibonacci.solveFibonacci(1));
-        assertEquals(5, fibonacci.solveFibonacci(5));
-        assertEquals(32, fibonacci.solveFibonacci(2178309));
-        assertEquals(94, fibonacci.solveFibonacci(19740274219868000L));
+        assertEquals(0, Fibonacci.solveFibonacci(0));
+        assertEquals(1, Fibonacci.solveFibonacci(1));
+        assertEquals(1, Fibonacci.solveFibonacci(2));
+        assertEquals(5, Fibonacci.solveFibonacci(5));
+        assertEquals(2178309, Fibonacci.solveFibonacci(32));
+        assertEquals(7540113804746346429L, Fibonacci.solveFibonacci(92));
     }
 
 }
