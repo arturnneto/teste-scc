@@ -1,4 +1,3 @@
-import org.example.classes.Fibonacci;
 import org.example.classes.RecursiveFibonacci;
 import org.example.exceptions.InvalidInputException;
 import org.junit.jupiter.api.BeforeEach;
