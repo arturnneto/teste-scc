@@ -1,7 +1,7 @@
-import org.example.classes.PrimeNumbers;
 import org.example.exceptions.InvalidInputException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.example.classes.RecursivePrimeNumbers;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -16,6 +16,6 @@ public class RecursivePrimeNumbersTest {
 
     @Test
     public void testThatNegativeInputThrowsInvalidInputException() {
-        assertThrows(InvalidInputException.class, () -> RecursivePrimeNumbers.solvePrimeNumbers(0));
+        assertThrows(InvalidInputException.class, () -> RecursivePrimeNumbers.validatesInputNumber(0));
     }
 }
