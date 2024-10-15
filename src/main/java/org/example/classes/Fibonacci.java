@@ -32,8 +32,8 @@ public class Fibonacci {
         return  correspondingNumber;
     }
 
-    public static long solveFibonacci(long targetNumber) throws Exception {
-        validatesInputNumber(targetNumber);
-        return calculatesFibonacci(targetNumber);
+    public static long solveFibonacci(long targetFibonacciNumber) throws Exception {
+        validatesInputNumber(targetFibonacciNumber);
+        return calculatesFibonacci(targetFibonacciNumber);
     }
 }

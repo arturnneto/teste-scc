@@ -28,5 +28,4 @@ public class FibonacciTest {
         assertEquals(2178309, Fibonacci.solveFibonacci(32));
         assertEquals(7540113804746346429L, Fibonacci.solveFibonacci(92));
     }
-
 }
